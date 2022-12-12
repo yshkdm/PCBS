@@ -1,0 +1,14 @@
+import numpy
+x = float(input("\n Enter the input x = "))
+b = float(input("\n Enter the bias b = "))
+w = float(input("\n Enter the weight w = "))
+net = (b + x * w)
+print("\t ***--- Output ---*** \n")
+print("\n net = ",net)
+if(net < 0):
+    out = 0
+elif(net >= 0) and (net <= 1):
+    out = net
+else:
+    out = 1
+print("Output = ",out)
